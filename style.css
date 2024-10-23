@@ -1,0 +1,84 @@
+/* Styles globaux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(143, 214, 214);
+}
+
+/* Flexbox pour le corps principal */
+main {
+    display: flex;
+    justify-content: space-between; /* Espacement uniforme entre les colonnes */
+    flex-wrap: wrap; /* Permet à plusieurs lignes de se former si l'écran est petit */
+    gap: 20px; /* Espacement entre les colonnes */
+    background-color: #73acc4;
+
+
+
+}
+
+/* Style des colonnes de navigation et produits */
+.col-md-3 {
+    flex: 1 1 23%; /* Chaque colonne prend environ 23% de la largeur (4 colonnes) */
+    display: flex;
+    flex-direction: column; /* Les cartes produits dans chaque colonne sont verticales */
+}
+
+/* Style pour la liste dans la première colonne */
+.list-group-item {
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #f8f9fa; /* Couleur de fond */
+    border-radius: 5px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Changement de couleur au survol */
+.list-group-item:hover {
+    background-color: #4a6a77;
+}
+
+/* Alignement des cartes de produits */
+.card {
+    flex: 1 1 auto; /* Les cartes s'étendent dans la colonne */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1; /* Permet à la carte de grandir en fonction de son contenu */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Styles de l'en-tête */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #8fbbcc;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+/* Pied de page */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #353781;
+}
